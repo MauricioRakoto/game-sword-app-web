@@ -1,0 +1,260 @@
+.headers {
+    display: flex;
+    gap: 50px;
+}
+
+
+/* SEARCH GAME */
+.headers .search {
+    height: 22px;
+    background: #2d0d68;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+}
+
+.headers .search button  {
+    display: flex;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.headers .search button i  {
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.headers .search span  {
+    color: #ffffff;
+    font-size: 10px;
+}
+
+/* LOGO GAME SWORD */
+.headers .logo h3 {
+    font-size: 20px;
+}
+
+
+/* NOTIFICATIONS */
+.headers .notifications .items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.headers .notifications .items .item {
+    position: relative;
+}
+
+.headers .notifications .items .item .icon {
+    position: relative;
+    width: 62px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.headers .notifications .items .item .icon:hover {
+    background: #d7a81a;
+}
+
+.headers .notifications .items .item .icon i {
+    font-size: 13px;
+}
+
+.headers .notifications .items .item .icon span {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #2d0d68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 10px;
+    top: 4px;
+    left: 29px;
+}
+
+.headers .notifications .items .item .modal {
+    position: absolute;
+    display: block;
+    width: 400px;
+    min-height: 150px;
+    height: auto;
+    background: #2d0d68;
+    pointer-events: none;
+    margin-top: 25px;
+    transform: translateY(20px);
+    right: 0;
+    left: -80px;
+    border-radius: 5px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all .5s ease-in-out;
+    padding: 5px 10px;
+    z-index: 2;
+}
+
+.headers .notifications .items .item .modal.show {
+    visibility: visible;
+}
+
+.headers .notifications .items .item .modal .data {
+    display: flex;
+    position: relative;
+    gap: 10px;
+    width: 100%;
+    min-height: 90px;
+    padding: 10px;
+}
+
+.headers .notifications .items .item .modal .data::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #d7a81a;
+}
+
+.headers .notifications .items .item .modal .data .image {
+    width: 5%;
+    height: 17px;
+    border-radius: 50px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headers .notifications .items .item .modal .data .image i {
+    font-size: 10px;
+}
+
+.headers .notifications .items .item .modal .data .message {
+    display: inline-block;
+}
+
+.headers .notifications .items .item .modal .data .datetime {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    width: 70px;
+    height: 17px;
+    background: #a2a9ad;
+    border-radius: 5px;
+    font-size: 8px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* PROFILES */
+.headers .profiles {
+    display: flex;
+    justify-content: center;
+}
+
+.headers .profiles .my-profile {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background: #2d0d68;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin-left: 75%;
+}
+
+.headers .profiles .my-profile i {
+    cursor: pointer;
+}
+
+.headers .profiles .my-profile::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background: #d7a81a;
+    left: 18px;
+}
+
+.headers .profiles .my-profile .modal {
+    position: absolute;
+    top: 80px;
+    width: 200px;
+    right: -15px;
+    height: auto;
+    min-height: 100px;
+    background: #1e0d3e;
+    box-shadow: 0 0 15px rgb(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 10px;
+    visibility: hidden;
+    transition: .5s ease-in;
+    z-index: 2;
+}
+
+.headers .profiles .my-profile .modal.show {
+    visibility: visible;
+}
+
+
+.headers .profiles .my-profile .modal .photo {
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.headers .profiles .my-profile .modal .photo .image {
+    width: 50px;
+    height: 50px;
+    background: #1d2c83;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border: 1px solid;
+}
+
+.headers .profiles .my-profile .modal .auth {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.headers .profiles .my-profile .modal .auth a {
+    width: 100%;
+    height: 25px;
+    background: #1d2c83;
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.headers .profiles .my-profile .modal .auth a span {
+    color: #a2a9ad;
+}
+

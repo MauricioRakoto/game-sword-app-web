@@ -1,0 +1,59 @@
+/* START GAMES */
+.start-games .items {
+    display: flex;
+    gap: 20px;
+}
+
+.start-games .items button {
+    width: 150px;
+    height: 50px;
+    background: #1a1414;
+    border: 2px solid #d7a81a;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: .5s ease-in;
+    gap: 10px;
+}
+
+.start-games .items button i {
+    color: #d7a81a;
+    font-size: 18px;
+}
+
+.start-games .items button span {
+    color: #a2a9ad;
+}
+
+.start-games .items button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #2d0d68;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.start-games .items button:hover::after {
+    width: 100%;
+    animation: .8s width1;
+}
+
+@keyframes width1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
