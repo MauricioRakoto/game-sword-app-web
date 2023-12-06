@@ -8,6 +8,7 @@ const genreSchema = mongoose.Schema({
     img: {
         type: String,
         required: true,
+        default: "img.png"
     }
    
   }, {

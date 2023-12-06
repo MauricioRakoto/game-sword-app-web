@@ -5,6 +5,7 @@ import connectDB from './config/database.js'
 import cookieParser from 'cookie-parser'
 
 import userRoutes from './routes/userRoute.js'
+import genreRoute from "./routes/genreRoute.js"
 
 dotenv.config()
 connectDB()
@@ -17,6 +18,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 
 app.use("/", userRoutes)
+app.use("/", genreRoute)
 
 app.listen(PORT, () => {
 	console.log(`Server started a http://localhost:${PORT}`)
