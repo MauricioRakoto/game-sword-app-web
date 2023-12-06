@@ -6,6 +6,7 @@ import cookieParser from 'cookie-parser'
 
 import userRoutes from './routes/userRoute.js'
 import genreRoute from "./routes/genreRoute.js"
+import gameRoute from "./routes/gameRoute.js"
 
 dotenv.config()
 connectDB()
@@ -19,6 +20,7 @@ app.use(cookieParser())
 
 app.use("/", userRoutes)
 app.use("/", genreRoute)
+app.use("/", gameRoute)
 
 app.listen(PORT, () => {
 	console.log(`Server started a http://localhost:${PORT}`)
