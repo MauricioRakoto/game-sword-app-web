@@ -1,0 +1,124 @@
+@import './all.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 20px;
+    font-size: 12px;
+    background: #1d2c83;
+    color: #ffffff;
+}
+
+
+/* WIDTH */
+.col-w10 {
+    width: 10px;
+}
+
+.col-w20 {
+    width: 20px;
+}
+
+.col-w30 {
+    width: 30px;
+}
+
+.col-w40 {
+    width: 40px;
+}
+
+.col-w50 {
+    width: 50px;
+}
+
+.col-w60 {
+    width: 60px;
+}
+
+.col-w70 {
+    width: 70px;
+}
+
+.col-w80 {
+    width: 80px;
+}
+
+.col-w90 {
+    width: 90px;
+}
+
+.col-w100 {
+    width: 100px;
+}
+
+.col-w110 {
+    width: 110px;
+}
+
+.col-w120 {
+    width: 120px;
+}
+
+.col-w130 {
+    width: 130px;
+}
+
+.col-w140 {
+    width: 140px;
+}
+
+.col-w200 {
+    width: 200px;
+}
+
+.col-w210 {
+    width: 210px;
+}
+
+.col-w300 {
+    width: 300px;
+}
+
+.col-w400 {
+    width: 400px;
+}
+
+.col-w500 {
+    width: 500px;
+}
+
+.col-w600 {
+    width: 600px;
+}
+
+.col-w700 {
+    width: 700px;
+}
+
+.col-w760 {
+    width: 760px;
+}
+
+.col-w860 {
+    width: 860px;
+}
+
+.container {
+    width: 100%;
+}
+
+.sidebar {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    overflow: hidden;
+}
+
+.sidebar .content {
+    width: 85%;
+}

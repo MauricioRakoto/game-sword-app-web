@@ -1,0 +1,54 @@
+.navbar {
+    position: relative;
+}
+
+ul.navbar-links {
+    display: inline-block;
+    list-style: none;
+}
+
+ul.navbar-links li {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 5px 5px;
+    overflow: hidden;
+}
+
+ul.navbar-links li a {
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+ul.navbar-links li a i {
+    font-size: 11px;
+}
+
+ul.navbar-links li a.active {
+    background: #d7a81a;
+}
+
+ul.navbar-links li a.active:hover {
+    background: #d7a81a;
+}
+
+ul.navbar-links li a.active:hover i {
+    color: #2d0d68;
+}
+
+ul.navbar-links li a.active,
+ul.navbar-links li a:hover {
+    color: #ffffff;
+    background: #2d0d68;
+}
+
+ul.navbar-links li a:hover i {
+    color: #d7a81a;
+}
