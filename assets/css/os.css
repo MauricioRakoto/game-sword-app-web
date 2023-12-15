@@ -71,7 +71,7 @@
 }
 
 .content .os-detail .left .items .item.active {
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .content .os-detail .left .items .item {
@@ -80,6 +80,15 @@
     background: black;
     border-radius: 10px;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .os-detail .left .items .item img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
 }
 
 .content .os-detail .center .os-name h3 {
