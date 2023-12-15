@@ -1,6 +1,27 @@
+.content .list-os-title {
+    padding: 0 0 5px 0;
+    position: relative;
+}
+
+.content .list-os-title::after  {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 2px;
+    background: #d7a81a;
+}
+
+.content .list-os-title h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
 .content .list-os .items {
     display: flex;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .content .list-os .items .item {
@@ -16,11 +37,14 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0, 0, .5);
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content .list-os .items .item .image img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
 }
 
@@ -29,9 +53,93 @@
 }
 
 .content .list-os .items .item .information .desc {
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 .content .list-os .items .item .information .desc p {
     font-size: 12px;
+}
+
+.content .os-detail {
+    display: flex;
+    gap: 40px;
+}
+
+.content .os-detail .left .items .items {
+    display: grid;
+    gap: 30px;
+}
+
+.content .os-detail .left .items .item.active {
+    border: 2px solid white;
+}
+
+.content .os-detail .left .items .item {
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.content .os-detail .center .os-name h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content .os-detail .center .os-desc {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.content .os-detail .center .os-desc .info {
+    margin-bottom: 20px;
+}
+
+.content .os-detail .center .os-desc .genres .number-genres {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.content .os-detail .center .os-desc .genres .number-genres h4 {
+    font-size: 14px;
+    color: #1a1414;
+}
+
+.content .os-detail .center .os-desc .genres .number-genres span {
+    font-size: 12px;
+}
+
+.content .os-detail .center .os-desc .genres .list-number-genres {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.content .os-detail .center .os-desc .genres .list-number-genres .list {
+    display: flex;
+    gap: 20px;
+    width: 200px;
+    height: 30px;
+    padding: 5px 10px;
+    background: #1a1414;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.content .os-detail .center .os-desc .genres .list-number-genres .list .image {
+    width: 40px;
+    height: 100%;
+    background: white;
+}
+
+.content .os-detail .center .os-desc .genres .list-number-genres .list h5  {
+    font-size: 12px;
+}
+
+.content .os-detail .center .os-desc .genres .list-number-genres .list span {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
 }
